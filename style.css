@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Roboto+Mono:wght@300&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  margin-top: 1px;
+}
+
+p {
+  overflow-wrap: break-word;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.center {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation {
+  position: fixed;
+  right: 3%;
+  top: 3%;
+  height: 5%;
+  z-index: 1;
+}
+.social {
+  position: fixed;
+  justify-content: center;
+  left: 3%;
+  top: 3%;
+  height: 5%;
+  z-index: 1;
+  display: flex;
+}
+
+.social a {
+ margin: 3%;
+}
+
+.up {
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  height: 5%;
+  z-index: 1;
+  display: none;
+}
