@@ -24,7 +24,7 @@ p,
 a, ul, li {
   color: white;
   font-family: "Roboto Mono", monospace;
-  margin-top: 1px;
+  margin-top: 1%;
 }
 
 p, h1, h2 {
@@ -80,4 +80,25 @@ p, h1, h2 {
   height: 5%;
   z-index: 1;
   display: none;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+  #space1, #space2 {
+    display: block;
+  }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+  #space1, #space2 {
+    display: block;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  #space1, #space2 {
+    display: none;
+  }
 }
