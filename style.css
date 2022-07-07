@@ -21,13 +21,13 @@ h2,
 h3,
 h4,
 p,
-a {
+a, ul, li {
   color: white;
   font-family: "Roboto Mono", monospace;
   margin-top: 1px;
 }
 
-p {
+p, h1, h2 {
   overflow-wrap: break-word;
   margin-left: 10%;
   margin-right: 10%;
@@ -42,6 +42,15 @@ p {
   align-items: center;
   justify-content: center;
 }
+
+.skills {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 
 .navigation {
   position: fixed;
@@ -66,7 +75,7 @@ p {
 
 .up {
   position: fixed;
-  right: 3%;
+  right: 5%;
   bottom: 3%;
   height: 5%;
   z-index: 1;
