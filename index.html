@@ -17,10 +17,8 @@
     ></script>
 
     <script>
-      window.onscroll = function () {
-        var top =
-          document.body.scrollTop + document.documentElement.scrollTop == 0;
-        document.getElementById("up").style.display = top ? "block" : "none";
+      window.onscroll = () => {
+        let top = document.body.scrollTop + document.documentElement.scrollTop === 0;
         document.getElementById("up").style.display = top ? "none" : "block";
       };
     </script>
@@ -38,10 +36,10 @@
     </div>
 
     <div class="social">
-      <a href="https://github.com/imedgar">
+      <a href="https://github.com/imedgar" aria-label="Github">
         <i class="fa-brands fa-github fa-xl"></i>
       </a>
-      <a href="https://www.linkedin.com/in/edgar-garcia-rubio/">
+      <a href="https://www.linkedin.com/in/edgar-garcia-rubio/" aria-label="LinkedIn">
         <i class="fa-brands fa-linkedin fa-xl"></i>
       </a>
     </div>
@@ -67,39 +65,8 @@
       <h1>edgar g. rubio</h1>
       <h2>and i'm a backend developer</h2>
     </div>
-    <div id="space1" class="center"></div>
     <div id="about" class="center">
-      <p>I'm a software developer based in Barcelona.</p>
-      <p>
-        My interest for software development started back in 2010 mainly boosted
-        by the game development. As so many other people once hands in the topic
-        I realized there were many other outcomes for a software developer
-        career.
-      </p>
-      <p>
-        That is how in 2015 looking for my first job I landed as a Java backend
-        developer working for IBM innovation team. In between I have worked for
-        IT consultancies (mainly for banks) and other sectors such as supplies
-        or logistics, at Port of Barcelona. That made me realize that is not an
-        environment or a type of company culture aligned with my values. At the
-        time I felt a little bit "disappointed" with my career path, kind of
-        lost, like I needed a fresh start. I was ready and eager to update my
-        tech stack and therefore, keep growing as a developer.
-      </p>
-      <p>
-        And that is how in 2019 I was hired to work remotely as a backend
-        engineer for a small start-up. Which has been, in my opinion, my most
-        significant experience so far, both personal and technically.
-      </p>
-      <br />
-      <p>
-        It allowed me to work with JS (Node.js) on the server side and honestly,
-        it was like a breath of fresh air for my career and motivation. Since
-        then, it has been my goto for both personal and small projects
-        <i class="fa-solid fa-heart fa-xl fa-bounce"></i>
-      </p>
-      <br />
-      <p>Technologies I'm actually working with:</p>
+      <p id="about-intro">things I enjoy working with:</p>
       <div class="skills">
         <ul class="fa-ul">
           <li>
@@ -109,32 +76,30 @@
             <span class="fa-li"><i class="fa-solid fa-plus"></i></span>Docker
           </li>
           <li>
-            <span class="fa-li"><i class="fa-solid fa-plus"></i></span>Java
-            (Spring boot)
+            <span class="fa-li"><i class="fa-solid fa-plus"></i></span
+            >Javascript ES6 / Typescript
           </li>
           <li>
-            <span class="fa-li"><i class="fa-solid fa-plus"></i></span
-            >Javascript ES6
+            <span class="fa-li"><i class="fa-solid fa-plus"></i></span>Java
           </li>
         </ul>
         <ul class="fa-ul">
           <li>
-            <span class="fa-li"><i class="fa-solid fa-plus"></i></span
-            >Typescript
+            <span class="fa-li"><i class="fa-solid fa-plus"></i></span>Node.js
           </li>
           <li>
-            <span class="fa-li"><i class="fa-solid fa-plus"></i></span>Node.js
+            <span class="fa-li"><i class="fa-solid fa-plus"></i></span>CI/CD pipelines
           </li>
           <li>
             <span class="fa-li"><i class="fa-solid fa-plus"></i></span>Graphql
           </li>
           <li>
-            <span class="fa-li"><i class="fa-solid fa-plus"></i></span>MySQL
+            <span class="fa-li"><i class="fa-solid fa-plus"></i></span>SQL and NonSQL databases
           </li>
         </ul>
       </div>
       <br />
-      <p>Many other things interest me, some of them are:</p>
+      <p>many other things interest me, some of them are:</p>
       <div class="skills">
         <ul class="fa-ul">
           <li>
@@ -154,7 +119,6 @@
         </ul>
       </div>
     </div>
-    <div id="space2" class="center"></div>
     <div id="contactme" class="center">
       <p>say hi at</p>
       <h2>edgaru90@gmail.com</h2>
