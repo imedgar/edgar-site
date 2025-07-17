@@ -1,29 +1,37 @@
-# edgar (web)site
+# Edgar's Portfolio Site
+
 [![pages-build-deployment](https://github.com/imedgar/edgar-site/actions/workflows/pages/pages-build-deployment/badge.svg?branch=master)](https://github.com/imedgar/edgar-site/actions/workflows/pages/pages-build-deployment)
-## A simple personal site made with HTML, css, js and powered by
 
-<br />
+A personal site built with HTML, CSS, and JavaScript
 
-[![N|Solid](https://p5js.org/assets/img/p5js.svg)](https://nodesource.com/products/nsolid)
+## p5.js
 
-p5.js is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else! p5.js is free and open-source because we believe software, and the tools to learn it, should be accessible to everyone.
-Using the metaphor of a sketch, p5.js has a full set of drawing functionality. However, you’re not limited to your drawing canvas. You can think of your whole browser page as your sketch, including HTML5 objects for text, input, video, webcam, and sound.
+[![N|Solid](https://p5js.org/assets/img/p5js.svg)](https://p5js.org)
+The site uses **p5.js** for the animated neural network background.
 
-## Site 
+## Site
 
-- https://imedgar.github.io/edgar-site/
+- <https://imedgar.github.io/edgar-site/>
 
-## Tech
+## Technologies
 
-- p5js for the animation (https://github.com/imedgar/asteroids)
+- **p5.js**
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **FontAwesome**
 
 ## Deployment
 
-The site is deployed in Github pages taking the last commit from the main branch
+The site is automatically deployed to GitHub Pages from the `master` branch using GitHub Actions. Any commits to the main branch trigger a new deployment.
 
 ## Author
 
-edgar rubio https://github.com/imedgar
+**Edgar G. Rubio**
+
+- GitHub: [@imedgar](https://github.com/imedgar)
+- LinkedIn: [Edgar Garcia Rubio](https://www.linkedin.com/in/edgar-garcia-rubio/)
+- Email: <edgaru90@gmail.com>
 
 ## License
 

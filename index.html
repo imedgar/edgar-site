@@ -3,125 +3,155 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Edgar G. Rubio - Backend Developer" />
+    
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="https://imedgar.github.io/asteroids/libraries/p5.min.js"></script>
-    <script src="https://imedgar.github.io/asteroids/libraries/p5.sound.min.js"></script>
-    <script src="https://imedgar.github.io/asteroids/sketch.js"></script>
-    <script src="https://imedgar.github.io/asteroids/assets/asteroid.js"></script>
-    <script src="https://imedgar.github.io/asteroids/assets/comet.js"></script>
-    <script src="https://imedgar.github.io/asteroids/assets/star.js"></script>
-    <script src="https://imedgar.github.io/asteroids/assets/fps.js"></script>
-    <script
-      src="https://kit.fontawesome.com/051fcb12c1.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="libraries/p5.min.js"></script>
+    <script src="neural-network.js"></script>
 
-    <script>
-      window.onscroll = () => {
-        let top = document.body.scrollTop + document.documentElement.scrollTop === 0;
-        document.getElementById("up").style.display = top ? "none" : "block";
-      };
-    </script>
-
-    <title>hi i'm edgar</title>
+    <title>Edgar G. Rubio</title>
   </head>
 
   <body>
-    <div id="asteroidsCanvas"></div>
+    <div id="neural-network"></div>
 
-    <div class="navigation">
-      <a href="#about">about</a>
-      <br />
-      <a href="#contactme">contact me</a>
-    </div>
+    <div class="container">
+      <header class="header">
+        <div class="social-links">
+          <a href="https://github.com/imedgar" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/edgar-garcia-rubio/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:edgaru90@gmail.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </header>
 
-    <div class="social">
-      <a href="https://github.com/imedgar" aria-label="Github">
-        <i class="fa-brands fa-github fa-xl"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/edgar-garcia-rubio/" aria-label="LinkedIn">
-        <i class="fa-brands fa-linkedin fa-xl"></i>
-      </a>
-    </div>
+      <main class="main">
+        <div class="profile-column">
+          <div class="profile-content">
+            <p class="greeting">Hey, I'm Edgar</p>
+            <div class="profile-header">
+              <div class="profile-text">
+                <h2>Backend Developer</h2>
+              </div>
+              <img src="https://xdtfrabhpimnmiilhcur.supabase.co/storage/v1/object/public/personal-site//pic.JPG" alt="Legolas & Edgar" class="profile-image">
+            </div>
+            <p>I enjoy solving real problems and building useful things with others. I'm especially motivated by tough challenges, performance optimization, and figuring out how to make systems work better.</p>
+            <p>I focus on event-driven architectures, distributed systems, and developer tooling. Always exploring new technologies to keep things interesting.</p>
+            
+            <div class="profile-buttons">
+              <a href="mailto:edgaru90@gmail.com" class="btn-primary">Get in touch</a>
+            </div>
+          </div>
+        </div>
 
-    <div id="up" class="up">
-      <a href="#intro">
-        <i
-          class="fa-solid fa-arrow-up-long fa-xl fa-bounce"
-          style="
-            --fa-bounce-start-scale-x: 1;
-            --fa-bounce-start-scale-y: 1;
-            --fa-bounce-jump-scale-x: 1;
-            --fa-bounce-jump-scale-y: 1;
-            --fa-bounce-land-scale-x: 1;
-            --fa-bounce-land-scale-y: 1;
-          "
-        ></i>
-      </a>
-    </div>
+        <div class="projects-column">
+          <section class="latest-projects">
+            <h3>Things I've built</h3>
+            <div class="projects-grid">
+                <div class="project-box">
+                  <div class="project-header">
+                    <h4><a href="https://github.com/imedgar/nanoleaf-go" target="_blank">Nanoleaf Go</a></h4>
+                    <a href="https://github.com/imedgar/nanoleaf-go" target="_blank" class="github-icon">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                  <p>Go library for controlling Nanoleaf smart lights with API integration.</p>
+                  <div class="project-tech">Go, API</div>
+                </div>
 
-    <div id="intro" class="center">
-      <p>hi, my name is</p>
-      <h1>edgar g. rubio</h1>
-      <h2>and i'm a backend developer</h2>
-    </div>
-    <div id="about" class="center">
-      <p id="about-intro">things I enjoy working with:</p>
-      <div class="skills">
-        <ul class="fa-ul">
-          <li>
-            <span class="fa-li"><i class="fa-solid fa-plus"></i></span>AWS
-          </li>
-          <li>
-            <span class="fa-li"><i class="fa-solid fa-plus"></i></span>Docker
-          </li>
-          <li>
-            <span class="fa-li"><i class="fa-solid fa-plus"></i></span
-            >Javascript ES6 / Typescript
-          </li>
-          <li>
-            <span class="fa-li"><i class="fa-solid fa-plus"></i></span>Java
-          </li>
-        </ul>
-        <ul class="fa-ul">
-          <li>
-            <span class="fa-li"><i class="fa-solid fa-plus"></i></span>Node.js
-          </li>
-          <li>
-            <span class="fa-li"><i class="fa-solid fa-plus"></i></span>CI/CD pipelines
-          </li>
-          <li>
-            <span class="fa-li"><i class="fa-solid fa-plus"></i></span>Graphql
-          </li>
-          <li>
-            <span class="fa-li"><i class="fa-solid fa-plus"></i></span>SQL and NonSQL databases
-          </li>
-        </ul>
-      </div>
-      <br />
-      <p>many other things interest me, some of them are:</p>
-      <div class="skills">
-        <ul class="fa-ul">
-          <li>
-            <span class="fa-li"><i class="fa-solid fa-plus"></i></span>IoT
-          </li>
-          <li>
-            <span class="fa-li"><i class="fa-solid fa-plus"></i></span
-            >Generative art
-          </li>
-          <li>
-            <span class="fa-li"><i class="fa-solid fa-plus"></i></span>Game
-            development
-          </li>
-          <li>
-            <span class="fa-li"><i class="fa-solid fa-plus"></i></span>Books
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div id="contactme" class="center">
-      <p>say hi at</p>
-      <h2>edgaru90@gmail.com</h2>
+                <div class="project-box">
+                  <div class="project-header">
+                    <h4>GitHub Actions TUI</h4>
+                    <span class="github-icon placeholder">
+                      <i class="fab fa-github"></i>
+                    </span>
+                  </div>
+                  <p>Terminal interface for monitoring GitHub Actions (WIP).</p>
+                  <div class="project-tech">Go, Terminal UI</div>
+                </div>
+
+                <div class="project-box">
+                  <div class="project-header">
+                    <h4><a href="https://github.com/imedgar/rain-alert" target="_blank">Rain Alert</a></h4>
+                    <a href="https://github.com/imedgar/rain-alert" target="_blank" class="github-icon">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                  <p>Go service that sends weather notifications to your phone.</p>
+                  <div class="project-tech">Go, Docker</div>
+                </div>
+
+                <div class="project-box">
+                  <div class="project-header">
+                    <h4><a href="https://github.com/imedgar/wordlemeaning" target="_blank">Wordle Meaning</a></h4>
+                    <a href="https://github.com/imedgar/wordlemeaning" target="_blank" class="github-icon">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                  <p>Chrome extension that looks up Wordle word definitions.</p>
+                  <div class="project-tech">JavaScript</div>
+                </div>
+              </div>
+            </section>
+
+          </section>
+        </div>
+
+        <div class="technologies-column">
+          <section class="technologies">
+            <h3>Tech journey</h3>
+            <div class="roadmap">
+              <div class="roadmap-item">
+                <div class="roadmap-marker"></div>
+                <div class="roadmap-content">
+                  <h4>Studies</h4>
+                  <div class="roadmap-techs">
+                    <span class="tech-tag java">Java</span>
+                    <span class="tech-tag php">PHP</span>
+                    <span class="tech-tag python">Python</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="roadmap-item">
+                <div class="roadmap-marker"></div>
+                <div class="roadmap-content">
+                  <h4>5 years</h4>
+                  <div class="roadmap-techs">
+                    <span class="tech-tag java">Java</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="roadmap-item">
+                <div class="roadmap-marker"></div>
+                <div class="roadmap-content">
+                  <h4>Recent • 5y</h4>
+                  <div class="roadmap-techs">
+                    <span class="tech-tag javascript">JavaScript</span>
+                    <span class="tech-tag typescript">TypeScript</span>
+                  </div>
+                  <div class="roadmap-personal">
+                    <span class="personal-label">Projects</span>
+                    <span class="tech-tag go">Go</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p>© 2025 • HTML, CSS + p5js</p>
+      </footer>
     </div>
   </body>
 </html>
