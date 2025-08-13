@@ -4,18 +4,12 @@
 
 A personal site built with HTML, CSS, and JavaScript
 
-## p5.js
-
-[![N|Solid](https://p5js.org/assets/img/p5js.svg)](https://p5js.org)
-The site uses **p5.js** for the animated neural network background.
-
 ## Site
 
-- <https://imedgar.github.io/edgar-site/>
+- <https://edgarrubio.dev/>
 
 ## Technologies
 
-- **p5.js**
 - **HTML5**
 - **CSS3**
 - **JavaScript**
@@ -32,6 +26,7 @@ The site is automatically deployed to GitHub Pages from the `master` branch usin
 - GitHub: [@imedgar](https://github.com/imedgar)
 - LinkedIn: [Edgar Garcia Rubio](https://www.linkedin.com/in/edgar-garcia-rubio/)
 - Email: <edgaru90@gmail.com>
+- Site: <https://edgarrubio.dev/>
 
 ## License
 
